@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>icafe咖啡馆</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/init.css">
+</head>
+
+<body>
+	<div id="container">
+		<!-- 头部 -->
+		<header id="header" name="top">
+		</header>
+		<!-- 导航条 -->
+		<nav id="nav">
+			<p><a href="menu.html">咖啡MENU</a>
+				<a href="cook.html">咖啡COOK</a>
+				<a href="story.html">咖啡STORY</a>
+				<a href="news.html">咖啡NEWS</a>
+				<a href="party.html">咖啡PARTY</a></p>
+		</nav>
+
+		<article id="main">
+			<!-- 正文左侧 -->
+			<article id="leftside">
+				<!-- 菜单 -->
+				<div id="menu">
+					<h3>MENU</h3>
+					<table>
+						<tr>
+							<th></th>
+							<th scope="col">拿铁<br />Latte</th>
+							<th scope="col">卡布奇诺<br />Cappuccino</th>
+							<th scope="col">摩卡<br />Mocha</th>
+							<th scope="col">浓缩咖啡<br />Espresso</th>
+						</tr>
+						<tr>
+							<th scope="row">大杯</th>
+							<td>35</td>
+							<td>35</td>
+							<td>35</td>
+							<td>30</td>
+						</tr>
+						<tr>
+							<th scope="row">中杯</th>
+							<td>30</td>
+							<td>30</td>
+							<td>30</td>
+							<td>25</td>
+						</tr>
+						<tr>
+							<th scope="row">小杯</th>
+							<td>25</td>
+							<td>25</td>
+							<td>25</td>
+							<td>20</td>
+						</tr>
+					</table>
+				</div>
+				<!-- 图片列表 -->
+				<div id="imglist">
+					<div class="polaroid rotate_left">
+						<img src="images/Mocha.jpg" />
+					</div>
+					<div class="polaroid rotate_right">
+						<img src="images/Latte.jpg" />
+					</div>
+					<div class="polaroid rotate_left">
+						<img src="images/Espresso.jpg" />
+					</div>
+					<div class="polaroid rotate_right">
+						<img src="images/Cappuccino.jpg" />
+					</div>
+				</div>
+			</article>
+
+			<!-- 正文右部 -->
+			<article id="rightside">
+				<section class="subcont">
+					<img src="images/Latte.jpg" alt="">
+					<div class="subtext">
+						<h3>Latte<span class="fav">☆</span></h3>
+						<p><span>拿铁</span>一种传统的经典饮料——浓缩咖啡调入热牛奶，其上覆盖一层轻盈的奶沫。<br>品尝此款咖啡时，您可以选择特别加入某种口味（如香草，焦糖或杏仁口味）的糖浆。
+						</p>
+					</div>
+				</section>
+
+				<section class="subcont">
+					<img src="images/Cappuccino.jpg" alt="">
+					<div class="subtext">
+						<h3>Cappuccino<span class="fav">☆</span></h3>
+						<p><span>卡布奇诺</span>咖啡沿袭传统技法，由我们技艺娴熟的咖啡吧员将手工制作的热奶与细腻奶泡轻柔地浇在浓缩咖啡之上制作而成。</p>
+					</div>
+				</section>
+
+				<section class="subcont">
+					<img src="images/Mocha.jpg" alt="">
+					<div class="subtext">
+						<h3>Mocha<span class="fav">☆</span></h3>
+						<p><span>摩卡</span>咖啡由醇香的摩卡酱，浓缩咖啡和蒸奶相融相合，上面覆以搅打奶油。<br>寒冷的日子里，忧伤的时光中,任何人都无法抵抗她的诱惑。</p>
+					</div>
+				</section>
+
+				<section class="subcont">
+					<img src="images/Espresso.jpg" alt="">
+					<div class="subtext">
+						<h3>Espresso<span class="fav">☆</span></h3>
+						<p><span>浓缩咖啡</span>的精粹，以最浓缩的方式显现。浓缩咖啡带点焦糖味道，浓厚馥郁。</p>
+					</div>
+				</section>
+			</article>
+		</article>
+		<!-- 脚部 -->
+		<footer id="footer">
+			<p>Designed by 肖鹏 2019年5月</p>
+		</footer>
+	</div>
+	<!-- 固定图片 -->
+	<aside id="l-fix">
+		<p> <img src="images/Latte.jpg"></p>
+	</aside>
+	<!-- 右侧导航栏 -->
+	<aside id="r-fix" draggable="true" style="right:-14rem;">
+		<div id="bar-list">
+			<div id="login-open" onclick="showLoginPage()"></div>
+
+			<span id="my-favorites">☆<br>我的收藏</span>
+
+			<span id="vip">加入会员</span>
+
+			<span id="chat-with-us">联系我们</span>
+
+			<span id="to-top"><a href="#top">TOP</a></span>
+		</div>
+		<!-- 我的收藏 -->
+		<div class="hide" id="favorites">
+			<p><span class="back-btn">>></span>我的收藏</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aperiam repellat labore quae, ex tempora
+				consectetur in explicabo inventore esse cupiditate? Ducimus amet harum, incidunt et officia fugiat eaque
+				error.</p>
+		</div>
+		<!-- 加入会员 -->
+		<div class="hide" id="be-vip">
+			<p><span class="back-btn">>></span>我的会员</p>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis impedit eveniet odit enim. Nobis
+				consequuntur alias unde facere odit odio ad, repellat debitis, obcaecati quibusdam optio ratione
+				impedit, inventore recusandae.</p>
+		</div>
+		<!-- 返回条 -->
+		<!-- <div id="back-bar">
+
+		</div> -->
+		<!-- 联系我们 -->
+		<div id="we-chat">
+			<img src="../咖啡店/images/WeChat.jpg" alt="联系我们">
+		</div>
+	</aside>
+	<!-- 登录注册 -->
+	<div id="login-page" style="display:block">
+		<div id="icon"></div>
+		<form action="" method="GET" autocomplete="off" novalidate>
+			<p>
+				<span class="input-icon">
+					<img src="../咖啡店/icon/user.png" alt="用户名">
+				</span>
+				<input type="text" class="input" id="user-name"
+					   name="user_name" placeholder="用户名"
+					   maxlength="18">
+			</p>
+			<p>
+				<span class="input-icon">
+					<img src="../咖啡店/icon/password.png" alt="密码">
+				</span>
+				<input type="password" class="input"
+					   id="user-password" name="user_password" placeholder="密码"
+					   required maxlength="18">
+			</p>
+			<keygen name="security">
+			<button type="submit" class="input" id="login-button">登录</button>
+			<p id="check-bar">
+				<span id="login-left-text">
+					<input type="checkbox" name="remember" id="rem-usr-name">记住账号
+				</span>
+				<span id="login-right-text">没有账号？<a href="#">立即注册</a></span>
+			</p>
+		</form>
+	</div>
+</body>
+<script>
+	//注册登录实现登录页从上面弹出
+	function showLoginPage() {
+		var loginButton = document.getElementById("login");
+		var login = document.getElementById("login-page");
+		if (login.style.display == "none") {
+			login.style.display = "block";
+		} else {
+			login.style.display = "none";
+		}
+	}
+	//我的收藏
+	//加入会员
+	(function () {
+		var rFix = document.getElementById("r-fix");
+		var barList = document.getElementById("bar-list");
+		var x = document.getElementById("favorites");
+		var y = document.getElementById("be-vip");
+		var offset = barList.offsetWidth - rFix.offsetWidth;
+		//收藏
+		document.getElementById("my-favorites").onclick = function () {
+			let right = parseFloat(rFix.style.right) * 16;//16为字体大小
+			//边框打开状态下并且显示内容为当前对应时关闭边框
+			if (right == 0 && x.style.display == "block") {
+				// x.style.display = "none";
+				rFix.style.right = offset + "px";
+			}
+			//边框打开状态下并且显示内容为其他页面时隐藏其他页面页显示当前页面
+			else if (right == 0 && x.style.display == "none") {
+				y.style.display = "none";
+				x.style.display = "block";
+			}
+			// 其他情况打开边框打开对应页面
+			else {
+				y.style.display = "none";
+				x.style.display = "block";
+				rFix.style.right = "0px";
+			}
+		}
+		//会员
+		document.getElementById("vip").onclick = function () {
+			let right = parseFloat(rFix.style.right) * 16;//16为字体大小
+			//边框打开状态下并且显示内容为当前对应时关闭边框
+			if (right == 0 && y.style.display == "block") {
+				// y.style.display = "none";
+				rFix.style.right = offset + "px";
+			}
+			//边框打开状态下并且显示内容为其他页面时隐藏其他页面页显示当前页面
+			else if (right == 0 && y.style.display == "none") {
+				x.style.display = "none";
+				y.style.display = "block";
+			}
+			// 其他情况打开边框打开对应页面
+			else {
+				x.style.display = "none";
+				y.style.display = "block";
+				rFix.style.right = "0px";
+			}
+		}
+		//在边框区域外点击时关闭边栏
+		document.addEventListener("click", function () {
+			rFix.style.right = offset + "px";
+		});
+		rFix.addEventListener("click", function (e) {
+			e = e || window.event;
+			e.stopPropagation();
+		});
+	})();
+
+
+	//折叠按钮
+	// (function backBar() {
+	// 	var rFix = document.getElementById("r-fix");
+	// 	var back = document.getElementById("back-bar");
+	// 	var barList = document.getElementById("bar-list");
+	// 	// console.log(barList.offsetWidth-rFix.offsetWidth);
+	// 	back.onclick = function(){
+	// 		rFix.style.right = (barList.offsetWidth-rFix.offsetWidth)+"px";
+	// 	}
+	// })();
+	//悬浮显示eid为鼠标悬浮的元素的id sid为要显示的元素的id
+
+	//微信图片
+	(function () {
+		var e = document.getElementById("chat-with-us");
+		var t = document.getElementById("we-chat");
+		t.style.height = t.offsetWidth + "px";
+		t.onmouseout = e.onmouseout = function () {
+			t.style.display = "none";
+		}
+		t.onmouseover = e.onmouseover = function () {
+			t.style.display = "block";
+		}
+		//注意不能放到开始执行
+		t.style.display = "none";
+		//定时更新位置
+		var timer = setInterval(function () {
+			var y = e.offsetTop;
+			t.style.top = y + "px";
+		}, 500);
+	})();
+	//设置右侧固定条可拖放到左侧
+</script>
+
+</html>
